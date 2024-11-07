@@ -25,7 +25,7 @@ The dataset comprises behavioral data from multiple experiments, capturing key f
 ### 3. Temporal Trends
 - The dataset covers studies from 2020 to 2023, with a concentration in 2021-2022.
 
-### Visualizations
+## Visualizations
 
 ### Example: Heatmap of Correlation Between Variables
 
