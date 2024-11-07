@@ -25,18 +25,14 @@ The dataset comprises behavioral data from multiple experiments, capturing key f
 ### 3. Temporal Trends
 - The dataset covers studies from 2020 to 2023, with a concentration in 2021-2022.
 
-### 4. Performance Variability
-- Human performance shows higher variability compared to AI performance.
-- The standard deviation of human-AI collaboration suggests interesting dynamics in combined performance.
+### Visualizations
 
-## Visualizations
+### Example: Heatmap of Correlation Between Variables
 
-The project includes histograms and scatter plots visualizing key metrics such as:
+Below is an example heatmap that shows the correlation between different variables in the dataset such as human performance, AI performance, and human-AI collaboration.
 
-- Paper_ID and Exp_ID distributions
-- Number of experiments and participants
-- Performance metrics for humans, AI, and collaborative efforts
+![Correlation Heatmap of Performance Metrics](https://pplx-res.cloudinary.com/image/upload/v1730955000/user_uploads/rmjzmwtmw/Jie-Ping-2024-11-07-Xia-Wu-12.47.04.jpg)
 
-These visualizations provide a quick overview of the data's structure and highlight potential areas for deeper analysis.
-
-By leveraging this rich dataset, we can gain valuable insights into optimizing collaborative performance and designing more effective human-AI systems.
+This heatmap helps us understand how different variables are correlated:
+- Darker colors indicate stronger correlations.
+- Lighter colors suggest weaker or no correlations between variables.
