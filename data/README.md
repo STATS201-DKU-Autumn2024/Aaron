@@ -7,7 +7,7 @@ The data has undergone standardized cleaning and validation procedures to ensure
 ## References
 [1] L. K. Son, A. Whillans, J. M. Burrowes, "Human behavior data for research: Description and applications," Nat. Hum. Behav., vol. 8, pp. 1543-1554, Oct. 2024. Available: https://www.nature.com/articles/s41562-024-02024-1.
 
-## Data Dictionaries
+## Data Dictionary
 ### Table S1: Dataset Data Dictionary
 
 | Variable Name   | Type   | Definition                                                       | Unit         | Range (Date & Value)                   | Frequency  | Timezone | Sample Observation |
@@ -20,3 +20,5 @@ The data has undergone standardized cleaning and validation procedures to ensure
 | Exp_ID_Cleaned  | String | Cleaned version of experiment identifier for easier interpretation| ID           | 0–500+                                 | N/A        | N/A      | "45_cleaned"        |
 | ES_ID           | String | Unique identifier for effect size calculation                     | ID           | 0–500+                                 | N/A        | N/A      | "ES_001"            |
 | Title           | String | Title of the specific dataset or experiment                       | Text         | N/A                                    | N/A        | N/A      | "Effect of ABC"    |
+
+This data dictionary provides an overview of the dataset's variables, including detailed descriptions, types, units ranges for each variable.
