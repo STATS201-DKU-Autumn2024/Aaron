@@ -36,3 +36,16 @@ Below is an example heatmap that shows the correlation between different variabl
 This heatmap helps us understand how different variables are correlated:
 - Darker colors indicate stronger correlations.
 - Lighter colors suggest weaker or no correlations between variables.
+
+## Dataset Description
+
+The human behavioral patterns dataset provides performance measurements for humans, AI systems, and their collaboration across various tasks and experiments. Each experiment's data is represented as a separate column with rows representing different metrics. This dataset enables analysis of performance patterns both temporal (across years) and task-specific.
+
+| **Variable**        | **Description**                                  |
+|---------------------|--------------------------------------------------|
+| Date/Time           | Hourly timestamp for each measurement            |
+| Human_Performance   | Performance score for human participants         |
+| AI_Performance      | Performance score for AI systems                 |
+| HumanAI_Performance | Performance score for human-AI collaboration     |
+
+For more detailed information, please refer to the dataset documentation.
