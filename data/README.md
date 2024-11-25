@@ -22,3 +22,57 @@ The data has undergone standardized cleaning and validation procedures to ensure
 | Title           | String | Title of the specific dataset or experiment                       | Text         | N/A                                    | N/A        | N/A      | "Effect of ABC"    |
 
 This data dictionary provides an overview of the dataset's variables, including detailed descriptions, types, units ranges for each variable.
+
+---
+# Problem Set 2
+# Project Overview
+
+## Datasets Included
+
+This repository includes the following datasets:
+
+1. **`all_studies_game_data.csv`**  
+2. **`all_studies_round_data.csv`**
+
+---
+
+## Dataset Details
+
+### 1. `all_studies_game_data.csv`
+
+**Source and Purpose:**  
+This dataset contains detailed information about games played in various studies. It serves as a foundational dataset to analyze patterns in gameplay, user behavior, and study outcomes. The dataset aims to support research in behavioral analysis and experimental gaming setups.
+
+**Preprocessing and Harmonization Steps:**  
+- **Data Cleaning:** Missing or incomplete rows were inspected and filled where possible or removed if deemed unnecessary for analysis.  
+- **Normalization:** Ensured uniform data formats (e.g., timestamps in ISO format, consistent case for categorical variables).  
+- **Deduplication:** Checked for and removed duplicate entries to maintain dataset integrity.  
+
+---
+
+### 2. `all_studies_round_data.csv`
+
+**Source and Purpose:**  
+This dataset provides round-by-round data, offering granular insights into each game's progress within the studies. It is complementary to the game-level data, enabling more detailed analysis of intra-game dynamics.
+
+**Preprocessing and Harmonization Steps:**  
+- **Data Cleaning:** Addressed outliers and validated field-level consistency.  
+- **Index Alignment:** Ensured that round identifiers align correctly with the game identifiers from `all_studies_game_data.csv`.  
+- **Feature Engineering:** Added derived fields (e.g., round duration, player actions) to enhance analytical value.  
+
+---
+
+## Usage Instructions
+
+1. Clone the repository to access the datasets.  
+2. Load the datasets using tools such as Python's `pandas` or R's `data.table`.  
+3. Apply your analysis pipeline or use the provided preprocessing scripts to prepare the data further.
+
+---
+
+## Notes
+
+- Both datasets are anonymized and do not contain personally identifiable information (PII).  
+- For detailed preprocessing scripts and exploratory analysis, refer to the `/code` folder.  
+
+
