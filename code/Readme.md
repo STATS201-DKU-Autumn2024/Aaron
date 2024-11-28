@@ -32,6 +32,12 @@ This repository contains code for a data science project focused on analyzing ga
    git clone <repository_url>
    cd <repository_folder>
 
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+
+---------
 ## 4. Usage Instructions
 Follow these steps to execute the notebook:
 
