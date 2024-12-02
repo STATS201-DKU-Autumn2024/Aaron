@@ -62,7 +62,7 @@ This dataset provides round-by-round data, offering granular insights into each 
 
 ---
 
-##Poster.pdf##
+**Poster.pdf**
 
 ## Usage Instructions
 
