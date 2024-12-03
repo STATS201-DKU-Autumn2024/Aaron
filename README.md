@@ -73,5 +73,25 @@ These questions are crucial for understanding consumer behavior, particularly in
 - **Societal or Real-World Benefits**: This research helps wineries and wine retailers understand consumer preferences more accurately, offering personalized wine recommendations and improving customer satisfaction and loyalty.
 - **Potential Applications**: The results could inform personalized wine recommendation systems both online and in-store and could contribute to targeted advertising based on evolving consumer preferences.
 
+## Navigation Instructions
+
+To navigate the repository and locate the following components:
+
+1. **Code for simulations and visualizations**:
+   - The main code for running simulations and generating visualizations (e.g., confusion matrices, ROC curves, adaptive network dynamics) is located in the `code/` directory. Inside this folder, you will find the following files:
+     - `wine_quality_prediction.ipynb`: Contains the implementation of machine learning models and training pipeline.
+     - `visualizations.py`: Generates visualizations like confusion matrices, ROC curves, and adaptive network diagrams.
+
+2. **Datasets and preprocessing steps**:
+   - The datasets and related preprocessing scripts can be found in the `data/` directory:
+     - `wine_quality.csv`: The primary dataset used for wine quality prediction, which includes features like alcohol content, acidity, pH, etc.
+     - `preprocessing.py`: Contains preprocessing steps like handling missing values, feature scaling, and encoding categorical variables.
+
+3. **Documentation and dependencies**:
+   - The `docs/` directory contains all the project documentation, including this README file. It provides detailed information about the methodology, results, and conclusions.
+   - The `requirements.txt` file lists the dependencies required to run the project, including libraries such as `scikit-learn`, `matplotlib`, `pandas`, and `networkx`.
+
+You can also explore the directory structure to familiarize yourself with the project and its components.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
