@@ -14,8 +14,7 @@ We would like to acknowledge **Prof. Luyao Zhang** for the invaluable guidance t
 This project allowed me to expand my understanding of integrating machine learning with real-world applications like wine quality prediction. The process of learning about adaptive networks and consumer behavior has deepened my knowledge of social science and reinforced my technical skills in machine learning. This project is a milestone in my journey to blend data science with practical, industry-relevant challenges.
 
 ## Embedded Media
-- 
-- [Poster Link] (Embed the poster here)
+- [https://github.com/STATS201-DKU-Autumn2024/Aaron/blob/main/data/Poster.pdf] 
 
 ## Table of Contents
 1. [Background and Motivation](#background-and-motivation)
