@@ -1,4 +1,4 @@
-# Final Project: Optimizing Wine Quality Prediction and Consumer Preferences through Adaptive Network Structures and Machine Learning Models
+# Final Project: Optimizing Wine Quality Prediction through Machine Learning Models
 
 ## Author
 - **[Qianshuo Wang(Aaron)]**: [Lead Developer, Data Analyst, and Report Author]
