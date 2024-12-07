@@ -9,7 +9,7 @@ This project was submitted for **STATS201 Machine Learning for Social Science**,
 
 ## Acknowledgments
 We would like to acknowledge **Prof. Luyao Zhang** for the invaluable guidance throughout the project. Special thanks to our classmates for their insightful feedback, as well as AIGC tools and open-source software that aided the development of our models.
-                        **Classmates** for offering collaborative support and exchanging ideas during project development
+                       
 ## Statement of Intellectual and Professional Growth
 This project allowed me to expand my understanding of integrating machine learning with real-world applications like wine quality prediction. The process of learning about adaptive networks and consumer behavior has deepened my knowledge of social science and reinforced my technical skills in machine learning. This project is a milestone in my journey to blend data science with practical, industry-relevant challenges.
 
