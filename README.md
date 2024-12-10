@@ -24,7 +24,7 @@ This project allowed me to expand my understanding of integrating machine learni
 5. [Results](#results)
 6. [Intellectual Merits](#intellectual-merits)
 7. [Practical Impacts](#practical-impacts)
-8. [AI Governance and Ethical Considerations](#ai-governance-and-ethical-considerations)
+
 
 ## Background and Motivation
 - **Gap or Problem**: Wine quality prediction has traditionally relied on chemical properties and expert opinions. However, consumer preferences, which are subjective and influenced by social interactions, have not been sufficiently incorporated into predictive models. Additionally, preferences evolve over time, which presents a challenge for static models.
