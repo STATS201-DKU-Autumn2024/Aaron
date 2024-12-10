@@ -13,64 +13,90 @@ We would like to acknowledge **Prof. Luyao Zhang** for the invaluable guidance t
 ## Statement of Intellectual and Professional Growth
 This project allowed me to expand my understanding of integrating machine learning with real-world applications like wine quality prediction. The process of learning about adaptive networks and consumer behavior has deepened my knowledge of social science and reinforced my technical skills in machine learning. This project is a milestone in my journey to blend data science with practical, industry-relevant challenges.
 
+---
 ## Embedded Media
 - [https://github.com/STATS201-DKU-Autumn2024/Aaron/blob/main/data/Poster.png] 
-
+---
 ## Table of Contents
+## Wine Quality Prediction Using Machine Learning
+
+### Table of Contents
 1. [Background and Motivation](#background-and-motivation)
 2. [Research Questions](#research-questions)
 3. [Application Scenario](#application-scenario)
-4. [Methodologies](#methodologies)
+   1. [Industry and Field](#industry-and-field)
+   2. [Dataset](#dataset)
+      - [Dataset Description](#dataset-description)
+      - [Dataset Characteristics](#dataset-characteristics)
+      - [Data Preprocessing](#data-preprocessing)
+4. [Methodology](#methodology)
+   1. [XGBoost](#xgboost)
+   2. [SHAP](#shap)
+   3. [Confusion Matrix](#confusion-matrix)
 5. [Results](#results)
+   1. [XGBoost Results](#xgboost-results)
+   2. [SHAP Results](#shap-results)
+   3. [Confusion Matrix Results](#confusion-matrix-results)
 6. [Intellectual Merits](#intellectual-merits)
 7. [Practical Impacts](#practical-impacts)
 
+---
 
-## Background and Motivation
-- **Gap or Problem**: Wine quality prediction has traditionally relied on chemical properties and expert opinions. However, consumer preferences, which are subjective and influenced by social interactions, have not been sufficiently incorporated into predictive models. Additionally, preferences evolve over time, which presents a challenge for static models.
-- **Significance**: This research aims to bridge this gap by incorporating adaptive network structures and machine learning, improving wine quality prediction. By considering how social feedback (e.g., reviews, ratings, expert opinions) influences preferences, this approach offers more personalized wine recommendations. It also highlights the role of social influence in decision-making, which is significant for both the wine industry and machine learning.
+### Background and Motivation
+Traditionally, wine quality prediction relies heavily on geographical factors, and consumers often believe that wines from certain regions are of higher quality. However, the chemical composition of wine, such as acidity, alcohol content, sugar levels, etc., may have a more direct impact on wine quality. Existing models often overlook this factor, focusing instead on regional advantages as the primary quality indicator. This study aims to challenge the idea that geographical origin is the only determinant of wine quality by using machine learning models to analyze the relationship between the chemical composition of wine and its quality.
 
-## Research Questions
-- **How do adaptive network structures, reflecting evolving consumer interactions, enhance the prediction of wine quality and consumer preferences?**
-- **Can machine learning algorithms improve the accuracy of wine quality prediction by incorporating dynamic feedback from consumer networks?**
+### Research Questions
+1. Which wine components (such as acidity, alcohol content, sugar levels, etc.) are the most important factors in predicting wine quality?
+2. How can we improve the accuracy of wine quality prediction by focusing on chemical composition instead of geographical origin?
 
-These questions are crucial for understanding consumer behavior, particularly in industries like wine, where opinions evolve and influence purchasing decisions. The integration of adaptive networks and machine learning is a novel approach combining social science with technology.
+### Application Scenario
 
-## Application Scenario
-- **Industries/Fields**: Wine industry, consumer preference analysis, machine learning, social network analysis.
-- **Dataset Use**: The data includes various wine characteristics (e.g., alcohol content, acidity, pH, etc.) and ratings that can be used to predict wine quality. Integrating social network analysis will also allow the model to account for consumer review patterns and social feedback, offering a more holistic approach to wine quality prediction.
+#### Industry and Field
+The dataset used in this study comes from the wine industry, focusing on the chemical compositions of red and white wines and their quality ratings. This application is within food science and beverage industry research, emphasizing predictive analytics for wine quality control.
 
-## Methodologies
+#### Dataset
 
-### Machine Learning Methods:
-1. **Prediction**: Supervised learning techniques (e.g., Random Forest, Support Vector Machines, or Neural Networks) will be applied to predict wine quality based on chemical properties and historical ratings.
-2. **Adaptive Network**: An adaptive network will be created to represent dynamic social interactions (e.g., how consumer feedback influences each other). This network will evolve as connections between individuals change based on their ratings or interactions, dynamically adjusting predictions to improve accuracy.
+##### Dataset Description
+This study utilizes a Wine Quality Dataset, which contains multivariate data about various chemical properties of red and white wines. The dataset is designed to support machine learning models focused on wine quality prediction.
 
-### Evaluation:
-1. **Confusion Matrix**: To assess classification performance for categorical outcomes like wine quality (e.g., excellent, good, poor).
-2. **ROC Curve**: To evaluate the model’s ability to classify wine quality categories based on its predictive power.
+##### Dataset Characteristics
+- **Data Type**: Multivariate dataset containing chemical compositions of wines along with corresponding quality ratings.
 
-### Data Preprocessing:
-- Handling missing values, scaling numerical features (e.g., alcohol content, acidity), and encoding categorical variables (e.g., wine category).
-- Constructing the adaptive network by linking individuals based on shared reviews or ratings.
+##### Data Preprocessing
+- **Missing Values**: The dataset is relatively clean, with minimal missing values. Any missing values, if present, are handled by imputing mean/median values based on the feature distribution.
+- **Normalization**: Data features are normalized to ensure consistent scales across all variables, which improves the performance of machine learning algorithms.
 
-### Interpretability and Explainability:
-- Using SHAP values to explain the contributions of different features (e.g., alcohol, acidity) to wine quality predictions.
-- Visualizing the adaptive network dynamics to understand how feedback influences predictions.
+### Methodology
 
-## Results
-- **Findings**: The performance of the machine learning model with and without the adaptive network will be summarized, including improvements in prediction accuracy when social network feedback is incorporated.
-- **Visualizations**: Confusion matrices and ROC curves will be presented to evaluate the model's performance. Examples will be provided showing how social feedback influenced wine preference predictions across different consumer groups.
+#### XGBoost
+XGBoost is used in this study to predict wine quality in a multi-class classification task. It is particularly suitable for this problem as it can capture complex, non-linear relationships between features, such as the chemical composition of wine and its quality. XGBoost also offers advantages such as ranking feature importance and efficiently handling missing data.
 
-## Intellectual Merits
-- **Advancement of Existing Literature**: This research extends machine learning models by integrating adaptive network analysis to account for social feedback, a feature not fully explored in previous wine quality prediction studies.
-- **Inspiring Future Research Directions**:
-   - Exploring adaptive networks in other domains (e.g., movie recommendations, product reviews).
-   - Investigating how different network structures (e.g., small-world networks) may affect predictions.
+#### SHAP
+This article applies SHAP to determine which ingredients play the most significant role in predicting wine quality by assigning an independent contribution value to each characteristic.
 
-## Practical Impacts
-- **Societal or Real-World Benefits**: This research helps wineries and wine retailers understand consumer preferences more accurately, offering personalized wine recommendations and improving customer satisfaction and loyalty.
-- **Potential Applications**: The results could inform personalized wine recommendation systems both online and in-store and could contribute to targeted advertising based on evolving consumer preferences.
+#### Confusion Matrix
+A confusion matrix is used in this study to evaluate the classification performance of the machine learning models. Given that we are predicting wine quality (e.g., excellent, good, poor), the confusion matrix will display the number of true positives, true negatives, false positives, and false negatives for each class.
+
+### Results
+
+#### XGBoost Results
+From the analysis, the results show that volatile acidity has the greatest impact on wine quality, followed by residual sugar, chlorides, and total sulfur dioxide.
+
+#### SHAP Results
+SHAP analysis reveals that volatile acidity has a high impact on red wine quality, while free sulfur dioxide has minimal influence.
+
+#### Confusion Matrix Results
+The prediction accuracy is relatively high for quality scores of 7 (Very Good) and 8 (Excellent), but lower for quality scores of 4 (Low Quality) and 5 (Fair).
+
+### Intellectual Merits
+This study makes significant contributions to the application of machine learning in the wine industry by identifying key features like volatile acidity, offering a more precise understanding of the chemical factors that influence wine quality.
+
+### Practical Impacts
+- **Informed Wine Selection**: Consumers can make more informed choices based on chemical composition, such as choosing wines with optimized volatile acidity.
+- **Consumer Preferences and Market Insights**: Winemakers can align their products with consumer preferences, particularly in markets that prioritize specific flavor profiles.
+- **Personalized Wine Preferences**: The analysis offers consumers the ability to tailor wine selections based on their taste preferences.
+
+---
 
 ## Navigation Instructions
 
@@ -92,5 +118,6 @@ To navigate the repository and locate the following components:
 
 You can also explore the directory structure to familiarize yourself with the project and its components.
 
+---
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
